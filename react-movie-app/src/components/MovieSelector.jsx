@@ -42,3 +42,28 @@ function MovieSelector() {
 }
 
 export default MovieSelector;
+
+
+<label>
+                Select Genre:
+                {/*
+                    <select> is a dropdown menu.
+                    - value={selectedGenre}: The dropdown shows the current selected genre from state.
+                    - onChange: When the user picks a genre, this event runs setSelectedGenre to update the state.
+                */}
+                <select
+                    value={selectedGenre}
+                    onChange={(e) => setSelectedGenre(e.target.value)}
+                >
+                    <option value="">--Choose a Genre--</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                </select>
+            </label>
+            <button onClick={fetchMovies}>Fetch Movies</button>
+
+
+- fetchMovies is from a function called fetch movies in the movieselector component
+
+// 

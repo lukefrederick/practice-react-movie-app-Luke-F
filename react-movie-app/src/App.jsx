@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './components/MovieSelector'
-import MovieSelector from './components/MovieSelector'
+import MovieSelector2 from './components/MovieSelector2'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
 
     <>
       <div id="root">
-        <MovieSelector />
+        <MovieSelector2 />
 
       </div>
       <div>
